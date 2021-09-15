@@ -1,27 +1,17 @@
 # Capacitor Sign in With Apple
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-Capacitor plugin to support [Sign in With Apple](https://developer.apple.com/sign-in-with-apple/get-started/)
+Fork of [capacitor-community/apple-sign-in](https://github.com/capacitor-community/apple-sign-in) to support Capacitor v2.x.x
 
 <!-- Badges -->
-<a href="https://npmjs.com/package/@capacitor-community/apple-sign-in">
-  <img src="https://img.shields.io/npm/v/@capacitor-community/apple-sign-in.svg">
-</a>
 <a href="https://npmjs.com/package/@capacitor-community/apple-sign-in">
   <img src="https://img.shields.io/npm/l/@capacitor-community/apple-sign-in.svg">
 </a>
 
 ## Maintainers
 
-| Maintainer | GitHub | Social | Sponsoring Company |
-| -----------| -------| -------| -------------------|
-| Max Lynch | [mlynch](https://github.com/mlynch) | [@maxlynch](https://twitter.com/maxlynch) | Ionic |
+| Maintainer | GitHub                              | Social                                    | Sponsoring Company |
+| ---------- | ----------------------------------- | ----------------------------------------- | ------------------ |
+| Max Lynch  | [mlynch](https://github.com/mlynch) | [@maxlynch](https://twitter.com/maxlynch) | Ionic              |
 
 Maintenance Status: Partially Maintained (help wanted)
 
@@ -32,15 +22,15 @@ Maintenance Status: Partially Maintained (help wanted)
 ## Usage (iOS)
 
 ```ts
-import { Plugins } from '@capacitor/core'
-import { ResponseSignInWithApplePlugin } from '@capacitor-community/apple-sign-in';
+import { Plugins } from "@capacitor/core";
+import { ResponseSignInWithApplePlugin } from "@capacitor-community/apple-sign-in";
 
-const { SignInWithApple } = Plugins
+const { SignInWithApple } = Plugins;
 
 try {
-  const response: ResponseSignInWithApplePlugin = await SignInWithApple.Authorize()
-} catch (e) {
-}
+  const response: ResponseSignInWithApplePlugin =
+    await SignInWithApple.Authorize();
+} catch (e) {}
 ```
 
 ## Instructions (Android/Web)
@@ -48,11 +38,11 @@ try {
 The plugin currently works for iOS only. It's made only to pass Apple's new terms. Add the Apple button only after you've checked that the user is on iOS device. Web support is planned for Apple's JS support ([help wanted!](https://github.com/capacitor-community/apple-sign-in/issues/1)).
 
 ```ts
-const { Device } = Plugins
+const { Device } = Plugins;
 
-let device = await Device.getInfo()
+let device = await Device.getInfo();
 
-if (device.platform === 'ios') {
+if (device.platform === "ios") {
   // Show the button with SignInWithApple.Authorize()
 }
 ```
@@ -72,6 +62,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
