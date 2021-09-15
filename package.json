@@ -1,6 +1,6 @@
 {
   "name": "@tallesventura/apple-sign-in",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "Capacitor Sign in with Apple",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -35,7 +35,7 @@
     "dist/",
     "ios/",
     "android/",
-    "CapacitorCommunityAppleSignIn.podspec"
+    "TallesventuraAppleSignIn.podspec"
   ],
   "keywords": [
     "capacitor",
