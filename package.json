@@ -1,5 +1,5 @@
 {
-  "name": "@tallesventura/apple-sign-in",
+  "name": "@kuausonho/apple-sign-in",
   "version": "0.0.14",
   "description": "Capacitor Sign in with Apple",
   "main": "dist/esm/index.js",
@@ -35,7 +35,7 @@
     "dist/",
     "ios/",
     "android/",
-    "TallesventuraAppleSignIn.podspec"
+    "KuausonhoAppleSignIn.podspec"
   ],
   "keywords": [
     "capacitor",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tallesventura/apple-sign-in.git"
+    "url": "git://github.com/kuausonho/apple-sign-in.git"
   },
   "bugs": {
-    "url": "https://github.com/tallesventura/apple-sign-in/issues"
+    "url": "https://github.com/kuausonho/apple-sign-in/issues"
   }
 }
